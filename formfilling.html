@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormFilling</title>
+</head>
+<body>
+    <div class="green" id="head">
+        <h1>Hello User</h1>
+        <hr>
+        <span>
+            <a href="index.html" target="main">Index</a>
+            <a href="about.html" target="main">About</a>
+            <a href="contact.html" target="main">Contact</a>
+            <a href="formfilling.html" target="main">FormFilling</a>
+            <a href="syllabus.html" target="main">Syllabus</a>
+            <a href="ToDoList.html" target="main">TodoList</a>
+        </span>
+        <hr>
+    </div>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <span>
+                &emsp;
+                <label for="fname">First name:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="mname">Middle name:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="lname">Last name:</label><br>
+            </span>
+            <span>
+                <input type="text" id="fname" name="fname">
+                &emsp;&emsp;
+                <input type="text" id="mname" name="mname">
+                &emsp;&emsp;
+                <input type="text" id="lname" name="lname"><br>
+            </span>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Medical Info:</legend>
+            <span>
+                &emsp;
+                <label for="age">Age:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="dob">D.O.B:</label><br>
+            </span>
+            <span>
+                <input type="number" id="age" name="age">
+                &emsp;&emsp;
+                <input type="date" id="dob" name="dob"><br>
+            </span>
+            <br>
+            <label for="age-proof">Upload Your Age Proof:</label><br>
+            <br>
+            <input type="file" id="age-proof" name="age-proof"><br>
+            <br>
+            <span>
+                &emsp;
+                <label for="sex">Sex:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="blood_grp">Blood Group:</label><br>
+            </span>
+            <span>
+                <input type="radio" id="sex" name="sex">Male
+                <input type="radio" id="sex" name="sex">Female
+                <input type="radio" id="sex" name="sex">Prefer not to say
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type="text" id="bloof_grp" name="blood_grp"><br>
+            </span>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Login Details:</legend>
+            <span>
+                &emsp;
+                <label for="email">Email:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="Password">Password:</label><br>
+            </span>
+            <span>
+                <input type="email" id="email" name="email">
+                &emsp;&emsp;
+                <input type="password" id="password" name="password"><br>
+            </span>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Address Info:</legend>
+            <span>
+                &emsp;
+                <label for="AddressL1">Address Line 1:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="AddressL2">Address Line 2:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="AddressL3">Address Line 3:</label><br>
+            </span>
+            <span>
+                <textarea id="AddressL1" name="AddressL1" cols="20" rows="1"></textarea>
+                &emsp;&emsp;
+                <textarea id="AddressL2" name="AddressL2" cols="20" rows="1"></textarea>
+                &emsp;&emsp;
+                <textarea id="AddressL3" name="AddressL3" cols="20" rows="1"></textarea><br>
+            </span>
+            <br>
+
+            <span>
+                &emsp;
+                <label for="Pincode">PinCode:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="city">City name:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="district">District name:</label><br>
+            </span>
+            <span>
+                <input type="pincode" id="pincode" name="pincode">
+                &emsp;&emsp;
+                <input type="text" id="city" name="city">
+                &emsp;&emsp;
+                <input type="text" id="district" name="district"><br>
+            </span>
+            <br>
+            <span>
+                &emsp;
+                <label for="state">State name:</label>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="country">Country name:</label><br>
+            </span>
+            <span>
+
+                <input type="text" id="state" name="state">
+                &emsp;&emsp;
+                <input type="text" id="country" name="country"><br>
+                <br>
+                <label for="address-proof">Upload Your Address Proof:</label><br>
+                <br>
+                <input type="file" id="address-proof" name="address-proof"><br>
+                <br>
+            </span>
+        </fieldset>
+        <br>
+        <label for="cars">Choose Your Car Perfernce Type:</label>
+        <select id="cars" name="cars" size="0">
+            <option value="sedan">Sedan</option>
+            <option value="xuv">XUV</option>
+            <option value="suv">SUV</option>
+            <option value="sports">Sports</option>
+            <option value="hyper">Hyper</option>
+            <option value="luxury">Luxury</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <input type="submit">
+        &emsp;&emsp;
+        <input type="reset">
+    </form>
+</body>
+</html>
